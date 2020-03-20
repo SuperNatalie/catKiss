@@ -1,0 +1,64 @@
+.border {
+  width: 500px;
+  height: 210px;
+  border: black solid 2px;
+  position: relative;
+}
+
+.cat1,
+.cat2,
+.heart {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+}
+
+.heart {
+  bottom: 100px;
+  left: 180px;
+  opacity: 0;
+  transition: opacity 1s 1.5s;
+}
+
+.cat1 img,
+.cat2 img,
+.heart img {
+  height: 100px;
+}
+
+.cat2 img {
+  transform: scaleX(-1);
+  height: 95px;
+}
+
+.cat1 {
+  left: 0px;
+  transition: left 1s ease-in;
+  bottom: 10px;
+}
+
+.cat2 {
+  left: 400px;
+  bottom: 18px;
+  transition: left 1s ease-in-out 0.5s;
+}
+
+.border:active .cat1 {
+  left: 150px;
+}
+
+.border:active .cat2 {
+  left: 232px;
+}
+
+.border:active .heart {
+  opacity: 1;
+}
+
+button {
+  position: absolute;
+  bottom: 3px;
+  left: 35%;
+  outline: none;
+}
