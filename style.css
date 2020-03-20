@@ -62,3 +62,8 @@ button {
   left: 35%;
   outline: none;
 }
+
+button:hover {
+  background-color: grey;
+  color: white;
+}
