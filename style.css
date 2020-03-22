@@ -67,3 +67,43 @@ button:hover {
   background-color: grey;
   color: white;
 }
+
+.border :nth-child(5) {
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 155px;
+}
+
+.border :nth-child(6) {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 40px;
+  height: 30px;
+}
+
+.border :nth-child(7) {
+  position: absolute;
+  margin-left: 360px;
+  margin-top: 155px;
+  height: 52px;
+}
+
+.border :nth-child(8) {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 70px;
+  height: 30px;
+}
+
+.border :nth-child(9) {
+  position: absolute;
+  margin-left: 450px;
+  margin-top: 20px;
+  height: 20px;
+}
+
+.border :nth-child(10) {
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 30px;
+}
