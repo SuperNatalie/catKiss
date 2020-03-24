@@ -3,6 +3,9 @@
   height: 210px;
   border: black solid 2px;
   position: relative;
+  background-image: url(./assets/img/pngfuel.com.png);
+  background-size: cover;
+  background-position: bottom;
 }
 
 .cat1,
