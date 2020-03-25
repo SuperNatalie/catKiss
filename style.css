@@ -1,11 +1,12 @@
 .border {
   width: 500px;
-  height: 210px;
+  height: 300px;
   border: black solid 2px;
   position: relative;
-  background-image: url(./assets/img/pngfuel.com.png);
+  background-image: url(./assets/img/beach.jpg);
   background-size: cover;
   background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .cat1,
@@ -43,8 +44,9 @@
 
 .cat2 {
   left: 400px;
-  bottom: 18px;
+  bottom: 15px;
   transition: left 1s ease-in-out 0.5s;
+  z-index: 1;
 }
 
 .border:active .cat1 {
@@ -73,40 +75,20 @@ button:hover {
 
 .border :nth-child(5) {
   position: absolute;
-  margin-left: 15px;
-  margin-top: 155px;
+  margin-left: 0px;
+  margin-top: 250px;
 }
 
 .border :nth-child(6) {
   position: absolute;
-  margin-left: 300px;
-  margin-top: 40px;
+  margin-left: 310px;
+  margin-top: 260px;
   height: 30px;
 }
 
 .border :nth-child(7) {
   position: absolute;
-  margin-left: 360px;
-  margin-top: 155px;
-  height: 52px;
-}
-
-.border :nth-child(8) {
-  position: absolute;
-  margin-left: 100px;
-  margin-top: 70px;
-  height: 30px;
-}
-
-.border :nth-child(9) {
-  position: absolute;
-  margin-left: 450px;
-  margin-top: 20px;
-  height: 20px;
-}
-
-.border :nth-child(10) {
-  position: absolute;
-  margin-left: 5px;
-  margin-top: 30px;
+  margin-left: 330px;
+  margin-top: 160px;
+  height: 50px;
 }
