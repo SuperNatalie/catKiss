@@ -7,6 +7,7 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .cat1,
@@ -49,28 +50,34 @@
   z-index: 1;
 }
 
-.border:active .cat1 {
+.around:active .cat1 {
   left: 150px;
 }
 
-.border:active .cat2 {
+.around:active .cat2 {
   left: 232px;
 }
 
-.border:active .heart {
+.around:active .heart {
   opacity: 1;
 }
 
 button {
-  position: absolute;
-  bottom: 3px;
-  left: 35%;
   outline: none;
+  margin-top: 10px;
+  margin-left: 180px;
 }
 
 button:hover {
   background-color: grey;
   color: white;
+}
+
+.border :nth-child(4) {
+  position: absolute;
+  margin-left: 350px;
+  margin-top: 250px;
+  height: 30px;
 }
 
 .border :nth-child(5) {
@@ -82,13 +89,44 @@ button:hover {
 .border :nth-child(6) {
   position: absolute;
   margin-left: 310px;
-  margin-top: 260px;
-  height: 30px;
+  margin-top: 160px;
+  height: 50px;
 }
 
 .border :nth-child(7) {
   position: absolute;
-  margin-left: 330px;
-  margin-top: 160px;
-  height: 50px;
+  margin-left: 390px;
+  margin-top: 10px;
+  height: 100px;
+  animation-name: sunny;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+.border :nth-child(8) {
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 500px;
+  animation-name: birds;
+  animation-duration: 10s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes birds {
+  0% {
+    margin-left: 500px;
+  }
+  100% {
+    margin-left: -200px;
+  }
+}
+
+@keyframes sunny {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
