@@ -99,8 +99,10 @@ button:hover {
   margin-top: 10px;
   height: 100px;
   animation-name: sunny;
-  animation-duration: 60s;
+  animation-duration: 110s;
   animation-iteration-count: infinite;
+  animation-delay: 0;
+  z-index: 1;
 }
 
 .border :nth-child(8) {
@@ -109,8 +111,18 @@ button:hover {
   margin-left: 500px;
   animation-name: birds;
   animation-duration: 10s;
-  animation-delay: 5s;
+  animation-delay: 10s;
   animation-iteration-count: infinite;
+  z-index: 2;
+}
+
+@keyframes sunny {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes birds {
@@ -119,14 +131,5 @@ button:hover {
   }
   100% {
     margin-left: -200px;
-  }
-}
-
-@keyframes sunny {
-  0% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
