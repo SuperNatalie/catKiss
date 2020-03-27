@@ -41,6 +41,8 @@
   left: 0px;
   transition: left 1s ease-in;
   bottom: 10px;
+  position: absolute;
+  z-index: 1;
 }
 
 .cat2 {
@@ -116,6 +118,16 @@ button:hover {
   z-index: 1;
 }
 
+.border :nth-child(9) {
+  height: 20px;
+  margin-top: 210px;
+  margin-left: 10px;
+  animation-name: boat;
+  animation-duration: 70s;
+  position: absolute;
+  animation-iteration-count: infinite;
+}
+
 @keyframes sunny {
   0% {
     transform: rotate(0deg);
@@ -131,5 +143,27 @@ button:hover {
   }
   100% {
     margin-left: -200px;
+  }
+}
+
+@keyframes boat {
+  0% {
+    margin-left: 10px;
+  }
+  50% {
+    margin-left: 300px;
+    transform: scaleX(1);
+  }
+  60% {
+    margin-left: 310px;
+    transform: scaleX(-1);
+  }
+  90% {
+    transform: scaleX(-1);
+    margin-left: 20px;
+  }
+  100% {
+    margin-left: 10px;
+    transform: scaleX(1);
   }
 }
